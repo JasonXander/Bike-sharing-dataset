@@ -2,16 +2,12 @@
 
 ## Setup environment
 ```
-%%writefile dashboard.py
-import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from babel.numbers import format_currency
-sns.set(style='dark')
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
 ```
 
 ## Run steamlit app
 ```
-!streamlit run dashboard.py & npx localtunnel --port 8501
+streamlit run dashboard.py
 ```
